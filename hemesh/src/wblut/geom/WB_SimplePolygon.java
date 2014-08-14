@@ -864,4 +864,18 @@ public class WB_SimplePolygon implements SimplePolygon {
 		return segments;
 	}
 
+    /*
+     * (non-Javadoc)
+     *
+     * 
+     */
+    public WB_SimplePolygon toPolygon2D() {
+        final WB_Point[] lpoints = new WB_Point[n];
+        for (int i = 0; i < n; i++) {
+            lpoints[i] = P.localPoint2D(points[i]);
+        }
+        return new WB_SimplePolygon(lpoints, n);
+
+    }
+
 }
