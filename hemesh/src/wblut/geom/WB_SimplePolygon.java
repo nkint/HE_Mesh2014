@@ -865,7 +865,7 @@ public class WB_SimplePolygon implements SimplePolygon {
 	}
 
     /*
-     * (non-Javadoc)
+     * To Polygon 2D. Transformation is done with {@link WB_Plane#localPoint2D(WB_Coordinate p)}
      *
      * 
      */
